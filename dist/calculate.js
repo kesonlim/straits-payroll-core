@@ -1,10 +1,10 @@
-import { calculateCpf, ageAt, prYearsSinceConversion } from "./cpf";
-import { calculateEpfMy } from "./epfMy";
-import { calculateSdl } from "./sdl";
-import { calculateShg } from "./shg";
-import { calculateOvertime } from "./overtime";
-import { calculateCommissionLines } from "./commission";
-import { dailyGrossRateCents, unpaidLeaveDeductionCents, leaveEncashmentPayCents, workingDaysInPeriod as countWorkingDays } from "./leave";
+import { calculateCpf, ageAt, prYearsSinceConversion } from "./cpf.js";
+import { calculateEpfMy } from "./epfMy.js";
+import { calculateSdl } from "./sdl.js";
+import { calculateShg } from "./shg.js";
+import { calculateOvertime } from "./overtime.js";
+import { calculateCommissionLines } from "./commission.js";
+import { dailyGrossRateCents, unpaidLeaveDeductionCents, leaveEncashmentPayCents, workingDaysInPeriod as countWorkingDays } from "./leave.js";
 function isoDayBefore(dateIso) {
     const d = new Date(dateIso);
     d.setDate(d.getDate() - 1);

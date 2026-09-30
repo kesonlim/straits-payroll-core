@@ -1,4 +1,4 @@
-import { monthsCompleted, roundToHalfDay } from "./leave";
+import { monthsCompleted, roundToHalfDay } from "./leave.js";
 
 /**
  * Leave settlement for an employee's final pay (ROADMAP.md item 6). Pure: the caller supplies the

@@ -1,10 +1,10 @@
-import { calculateCpf, ageAt, prYearsSinceConversion, type CitizenshipStatus } from "./cpf";
-import { calculateEpfMy } from "./epfMy";
-import { calculateSdl } from "./sdl";
-import { calculateShg, type ShgFund } from "./shg";
-import { calculateOvertime } from "./overtime";
-import { calculateCommissionLines, type CommissionLineInput, type CommissionLineResult } from "./commission";
-import { dailyGrossRateCents, unpaidLeaveDeductionCents, leaveEncashmentPayCents, workingDaysInPeriod as countWorkingDays } from "./leave";
+import { calculateCpf, ageAt, prYearsSinceConversion, type CitizenshipStatus } from "./cpf.js";
+import { calculateEpfMy } from "./epfMy.js";
+import { calculateSdl } from "./sdl.js";
+import { calculateShg, type ShgFund } from "./shg.js";
+import { calculateOvertime } from "./overtime.js";
+import { calculateCommissionLines, type CommissionLineInput, type CommissionLineResult } from "./commission.js";
+import { dailyGrossRateCents, unpaidLeaveDeductionCents, leaveEncashmentPayCents, workingDaysInPeriod as countWorkingDays } from "./leave.js";
 
 export type StatutoryScheme = "cpf" | "epf_my" | "none";
 

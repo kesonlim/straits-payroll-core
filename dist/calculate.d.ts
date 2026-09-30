@@ -1,6 +1,6 @@
-import { type CitizenshipStatus } from "./cpf";
-import { type ShgFund } from "./shg";
-import { type CommissionLineInput, type CommissionLineResult } from "./commission";
+import { type CitizenshipStatus } from "./cpf.js";
+import { type ShgFund } from "./shg.js";
+import { type CommissionLineInput, type CommissionLineResult } from "./commission.js";
 export type StatutoryScheme = "cpf" | "epf_my" | "none";
 export type PayType = "monthly" | "hourly";
 export interface PayrollLineInput {
