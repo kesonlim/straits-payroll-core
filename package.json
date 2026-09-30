@@ -1,0 +1,40 @@
+{
+  "name": "straits-payroll-core",
+  "version": "1.0.0",
+  "description": "Singapore statutory payroll calculation engine and banking formats (CPF, SDL, SHG, MOM leave/overtime, DBS UFF)",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "prepublishOnly": "npm run test && npm run build"
+  },
+  "keywords": [
+    "singapore",
+    "payroll",
+    "cpf",
+    "sdl",
+    "shg",
+    "dbs",
+    "mom"
+  ],
+  "author": "Straits HR",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.20.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.11"
+  }
+}
